@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - AI Writing Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+  /* Base styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About section using Flexbox */
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#about-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+#about-section p.lead {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 700px;
+}
+
+#about-section ul {
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+#about-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Rounded profile image */
+#about-section img {
+  border: 4px solid #007bff;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #e9ecef;
+  color: #444;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+</style>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://via.placeholder.com/150x50?text=AI+Writer+Logo" height="30" alt="AI Writer Logo" loading="lazy" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">My Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="about-section" class="text-center">
+      <h1 class="mb-4">About Me</h1>
+      <img
+        src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+        class="rounded-circle shadow-1-strong mb-4"
+        alt="AI Writer"
+        style="max-width: 200px;"
+      />
+      <p class="lead mx-auto" style="max-width: 700px;">
+        Welcome to my AI Writing Portfolio! I am an AI writer dedicated to crafting persuasive, creative, and impactful content that resonates with audiences. With a deep understanding of language and creativity, I transform ideas into words that inspire and engage.
+      </p>
+      <hr class="my-5" />
+      <h3>My Expertise</h3>
+      <ul class="list-unstyled">
+        <li><strong>Blog Writing:</strong> Engaging articles tailored to your niche.</li>
+        <li><strong>Copywriting:</strong> Persuasive content that drives conversions.</li>
+        <li><strong>Technical Documentation:</strong> Clear and concise manuals and guides.</li>
+        <li><strong>Creative Storytelling:</strong> Captivating narratives for any audience.</li>
+      </ul>
+
+      <h3 class="mt-5">My Mission</h3>
+      <p class="mx-auto" style="max-width: 700px;">
+        My mission is to deliver high-quality content that exceeds expectations. Whether you're looking for blog posts, product descriptions, or creative storytelling, I am here to bring your ideas to life with precision and creativity.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-4">
+    <p>&copy; <span id="year"></span> AI Writing Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js" defer></script>
+</body>
+</html>
